@@ -2,11 +2,13 @@ import React from 'react'
 
 const Contact = (props) => {
 
-	// * programmatic redirect example
-	// * history.push redirects to '/about' after timeout
+	/* 
+	* programmatic redirect example
+	* history.push redirects to '/about' after timeout
 	setTimeout(() => {
 		props.history.push('/about');
 	}, 2000);
+	*/
 
 	return (
 		<div className="container">
