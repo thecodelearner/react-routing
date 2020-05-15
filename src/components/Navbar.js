@@ -4,7 +4,7 @@ const Navbar = () => {
 	return (
 		<nav className="nav-wrapper grey darken-3">
 			<div className="container">
-				<a href="/" className="brand-logo">HITMAN APP</a>
+				<a href="/home" className="brand-logo">HITMAN APP</a>
 
 				<ul className="right">
 					<li><a href="/home">Home</a></li>

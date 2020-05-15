@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-import { BrowserRouter, Route } from "react-router-dom";
 
 export class App extends Component {
   render() {
