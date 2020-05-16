@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink, withRouter } from "react-router-dom";
-import Hitman from '../assets/hitman2-logo.png'
+// import Hitman from '../assets/hitman2-logo.png'
 const Navbar = (props) => {
 
 	// setTimeout(() => {
