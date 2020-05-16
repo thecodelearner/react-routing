@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
+
 class Home extends Component {
 
 	state = {
@@ -38,8 +39,6 @@ class Home extends Component {
 		) : (
 				<div className="center">No posts yet</div>
 			)
-
-
 
 
 

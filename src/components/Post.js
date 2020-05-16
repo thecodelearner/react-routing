@@ -18,13 +18,9 @@ class Post extends Component {
 				})
 			})
 
-
-
 		this.setState({
 			id: id,
 		});
-
-
 	}
 
 	render() {

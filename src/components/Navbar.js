@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink, withRouter } from "react-router-dom";
-
+import Hitman from '../assets/hitman2-logo.png'
 const Navbar = (props) => {
 
 	// setTimeout(() => {
@@ -10,7 +10,9 @@ const Navbar = (props) => {
 	return (
 		<nav className="nav-wrapper grey darken-3">
 			<div className="container">
-				<a href="/" className="brand-logo">HITMAN APP</a>
+
+				{/* <img className="brand-logo" src={Hitman} alt="hitman logo"></img> */}
+
 
 				<ul className="right">
 					<li><NavLink to="/">Home</NavLink></li>
