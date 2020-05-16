@@ -3,6 +3,7 @@ import { NavLink, withRouter } from "react-router-dom";
 // import Hitman from '../assets/hitman2-logo.png'
 const Navbar = (props) => {
 
+	// * programmatic redirect
 	// setTimeout(() => {
 	// 	props.history.push('/about')
 	// }, 2000);
