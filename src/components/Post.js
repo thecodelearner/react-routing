@@ -4,6 +4,11 @@ import { connect } from 'react-redux';
 class Post extends Component {
 
 
+	handlePostDelete = () => {
+		this.props.deletePost(this.props.post.id);
+		this.props.history.push('/');
+	}
+
 
 	render() {
 
@@ -11,6 +16,10 @@ class Post extends Component {
 			<div className="post">
 				<h4 className="center">{this.props.post.title}</h4>
 				<p>{this.props.post.body}</p>
+				<br />
+				<div className="center">
+					<button className="btn grey" onClick={this.handlePostDelete}>Delete Post</button>
+				</div>
 			</div>
 		) : (
 				<div className="center card">Loading post...</div>
@@ -32,5 +41,11 @@ const mapStateToProps = (state, ownProps) => {
 	}
 }
 
+const mapDispatchToProps = (dispatch) => {
+	return {
+		deletePost: (id) => { dispatch({ type: 'DELETE_POST', id: id }) }
+	}
+}
 
-export default connect(mapStateToProps)(Post)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Post)
